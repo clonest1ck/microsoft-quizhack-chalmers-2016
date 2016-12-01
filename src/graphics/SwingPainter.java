@@ -26,4 +26,24 @@ public class SwingPainter {
   public int getX() {
     return x;
   }
+
+  public int getY() {
+    return y;
+  }
+
+  public void setX(int x) {
+    this.x = x;
+  }
+
+  public void setY(int y) {
+    this.y = y;
+  }
+
+  public String getHeader() {
+    return header;
+  }
+
+  public void setHeader(String header) {
+    this.header = header;
+  }
 }
