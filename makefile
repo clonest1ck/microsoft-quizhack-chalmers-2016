@@ -4,11 +4,11 @@
 
 # Program packages and files
 #   - The packages should be the path inside your src directory. eg: package1 package2/package3
-PACKAGES =
+PACKAGES = readfile
 
 # Java compiler
 JAVAC = javac
-JVM = 1.6
+JVM = 1.9
 
 # Directory for compiled binaries
 # - trailing slash is important!
@@ -48,7 +48,7 @@ all : $(addprefix $(BIN), $(CLASS_FILES))
 
 # The line describing the action starts with <TAB>
 $(BIN)%.class : $(SRC)%.java
-    $(COMPILE) $<
+	$(COMPILE) $<
 
 clean :
-    rm -rf $(BIN)*
+	rm -rf $(BIN)*
