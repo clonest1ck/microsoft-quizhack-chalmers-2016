@@ -4,7 +4,7 @@
 
 # Program packages and files
 #   - The packages should be the path inside your src directory. eg: package1 package2/package3
-PACKAGES = readfile
+PACKAGES = files
 
 # Java compiler
 JAVAC = javac

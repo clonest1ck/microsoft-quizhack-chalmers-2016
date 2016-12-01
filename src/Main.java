@@ -1,4 +1,4 @@
-import readfile.ReadFile;
+import files.ReadFile;
 
 public class Main {
 
