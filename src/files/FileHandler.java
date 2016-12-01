@@ -29,7 +29,14 @@ public class FileHandler {
       new BufferedWriter(new FileWriter(path));
 
     bw.write(data);
-
     bw.close();
+  }
+
+  public void setPath(String newPath) {
+    path = newPath;
+  }
+
+  public String currentPath() {
+    return new String(path);
   }
 }
