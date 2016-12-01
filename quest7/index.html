@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Make America Great Again</title>
+  </head>
+  <script type="javascript">
+    var chat = false;
+    function switchImg () {
+      var img = document.getElementById("image");
+      if(chat) {
+        img.src = "trump.jpg";
+        chat = !chat;
+      } else {
+        img.src = "trumchat.jpg";
+        chat = !chat;
+      }
+    }
+  </script>
+  <body>
+    <a href="#"  onclick="switchImg()"><img id="image" src="trump.jpg"/></a>
+  </body>
+</html>

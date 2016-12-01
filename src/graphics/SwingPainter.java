@@ -4,6 +4,8 @@ import javax.swing.*;
 public class SwingPainter {
   private int x, y;
   private String header;
+  private JFrame window;
+  private ArrayList<JButton> buttons = new ArrayList<JButton>();
 
   public SwingPainter() {
     this(500, 400, "Got the Swing!");
@@ -45,5 +47,13 @@ public class SwingPainter {
 
   public void setHeader(String header) {
     this.header = header;
+  }
+
+  public int addButton(int x, int y, String label) {
+    buttons.add(new JButton(label));
+    int id = buttons.size() - 1;
+    buttons(id).setActionCommand(label);
+    buttons(id).addActionListener(new ButtonClickListener());
+
   }
 }
