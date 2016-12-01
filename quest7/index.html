@@ -2,20 +2,22 @@
   <head>
     <title>Make America Great Again</title>
   </head>
-  <script type="javascript">
+  <script>
     var chat = false;
-    function switchImg () {
+  </script>
+  <body>
+    <a href="#"  onclick="switchImg()"><img id="image" src="trump.jpg"/></a>
+    <script>
+    function switchImg() {
       var img = document.getElementById("image");
       if(chat) {
         img.src = "trump.jpg";
         chat = !chat;
       } else {
-        img.src = "trumchat.jpg";
+        img.src = "trumpchat.jpg";
         chat = !chat;
       }
     }
-  </script>
-  <body>
-    <a href="#"  onclick="switchImg()"><img id="image" src="trump.jpg"/></a>
+    </script>
   </body>
 </html>
