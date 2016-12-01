@@ -114,6 +114,26 @@ function seventeen(i) {
   }
 }
 
+function eighteen(i) {
+  return (i.toString().charCodeAt(0) - 1) % 2 + ((i.toString().charCodeAt(0)) % 2) * 2;
+}
+
+function nineteen(i) {
+  return -Math.abs(i-1) + 2;
+}
+
+function twenty(i) {
+  return Math.ceil(14.4062-14.7435*Math.sin(i));
+}
+
+function twentyone(i) {
+  return Math.ceil(2-1.4427*Math.log(i));
+}
+
+function twentytwo(i) {
+  return Math.round(4 * Math.pow(Math.E, -0.693147*i));
+}
+
 console.log(one(1));
 console.log(one(2));
 
@@ -164,3 +184,18 @@ console.log(sixteen(2));
 
 console.log(seventeen(1));
 console.log(seventeen(2));
+
+console.log(eighteen(1));
+console.log(eighteen(2));
+
+console.log(nineteen(1));
+console.log(nineteen(2));
+
+console.log(twenty(1));
+console.log(twenty(2));
+
+console.log(twentyone(1));
+console.log(twentyone(2));
+
+console.log(twentytwo(1));
+console.log(twentytwo(2));
