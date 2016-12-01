@@ -134,6 +134,10 @@ function twentytwo(i) {
   return Math.round(4 * Math.pow(Math.E, -0.693147*i));
 }
 
+function twentythree(i) {
+
+}
+
 console.log(one(1));
 console.log(one(2));
 
