@@ -64,11 +64,54 @@ function nine(i) {
 }
 
 function ten(i) {
-
+  var dict = {"1": 2, "2": 1};
+  return dict[i.toString()];
 }
 
 function eleven(i) {
-  
+  try {
+    if(i == 1) {
+        throw "2";
+    } else if(i == 2) {
+      throw "1";
+    }
+  } catch (e) {
+    return e;
+  }
+}
+
+function twelve(i) {
+  return (i - 2) * -i + 1;
+}
+
+function thirteen(i) {
+  return i ^ 3;
+}
+
+function fourteen(i) {
+  return (~ i) & 3;
+}
+
+function fifteen(i) {
+  return ~(i & 3) & 3;
+}
+
+function sixteen(i) {
+  var x = Math.random();
+  var y = x;
+  var k;
+  for(; i != 2; i++) {
+    x += x;
+  }
+  return x / y;
+}
+
+function seventeen(i) {
+  if(i == 1) {
+    return ~(i | (~2));
+  } else if (i == 2) {
+    return ~(i | (~1));
+  }
 }
 
 console.log(one(1));
@@ -94,3 +137,30 @@ console.log(seven(2));
 
 console.log(eight(1));
 console.log(eight(2));
+
+console.log(nine(1));
+console.log(nine(2));
+
+console.log(ten(1));
+console.log(ten(2));
+
+console.log(eleven(1));
+console.log(eleven(2));
+
+console.log(twelve(1));
+console.log(twelve(2));
+
+console.log(thirteen(1));
+console.log(thirteen(2));
+
+console.log(fourteen(1));
+console.log(fourteen(2));
+
+console.log(fifteen(1));
+console.log(fifteen(2));
+
+console.log(sixteen(1));
+console.log(sixteen(2));
+
+console.log(seventeen(1));
+console.log(seventeen(2));
