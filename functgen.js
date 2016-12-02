@@ -1,3 +1,5 @@
+// Functgen contains 24 different functions that return f(1) = 2 and f(2) = 1
+
 function one(i) {
   if(i == 1) {
     return 2;
@@ -135,7 +137,14 @@ function twentytwo(i) {
 }
 
 function twentythree(i) {
+  var str = "12";
+  return str.replace(i, '');
+}
 
+function twentyfour(i) {
+  var list = [1,2];
+  var x = list.filter(x => x != i);
+  return x[0];
 }
 
 console.log(one(1));
@@ -203,3 +212,9 @@ console.log(twentyone(2));
 
 console.log(twentytwo(1));
 console.log(twentytwo(2));
+
+console.log(twentythree(1));
+console.log(twentythree(2));
+
+console.log(twentyfour(1));
+console.log(twentyfour(2));

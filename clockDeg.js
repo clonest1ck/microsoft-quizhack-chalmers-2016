@@ -1,3 +1,5 @@
+// Takes a time of format HH:MM and calculates the angle between hour and minute
+
 var time = process.argv[2];
 
 var hours = time.split(":")[0];
